@@ -58,6 +58,7 @@ export function Footer() {
                 <Box
                   sx={(theme) => ({
                     display: 'flex',
+                    justifyContent: 'center',
                     cursor: 'pointer',
                     gap: '0.25rem',
                     color: theme.palette.text.secondary,
