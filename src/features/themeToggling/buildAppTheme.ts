@@ -49,7 +49,7 @@ const buildAppTheme = (variant: themeTypes) => ({
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'none',
+          textDecoration: 'none',
           boxShadow: 'none',
           ':hover': {
             boxShadow: 'none',

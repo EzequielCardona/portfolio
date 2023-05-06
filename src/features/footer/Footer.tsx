@@ -49,7 +49,7 @@ export function Footer() {
                 </a>
               </Box>
               <a
-                href="#thegithubrepo"
+                href="https://github.com/EzequielCardona/portfolio"
                 target="_blank"
                 rel="noreferrer"
                 style={{ textDecoration: 'none' }}
@@ -66,9 +66,9 @@ export function Footer() {
                     },
                   })}
                 >
-                  <Typography variant="caption">{`${builtByText(
-                    language,
-                  )} Ezequiel Cardona`}</Typography>
+                  <Typography variant="caption">
+                    {`${builtByText(language)} Ezequiel Cardona`}
+                  </Typography>
                   <GitHubIcon fontSize="small" />
                 </Box>
               </a>
