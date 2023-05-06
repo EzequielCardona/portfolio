@@ -128,6 +128,9 @@ export function LandingScreen() {
                   color: theme.palette.text.secondary,
                   border: `2px solid ${theme.palette.text.secondary}`,
                 },
+                [theme.breakpoints.down('sm')]: {
+                  width: '100%',
+                },
               })}
             >
               {checkProjectsText(language)}

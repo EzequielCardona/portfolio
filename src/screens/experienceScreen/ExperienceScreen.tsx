@@ -59,6 +59,7 @@ export function ExperienceScreen() {
           },
           [theme.breakpoints.down('md')]: {
             width: '80%',
+            minHeight: '40rem',
           },
           [theme.breakpoints.down('sm')]: {
             width: '90%',

@@ -22,6 +22,7 @@ export function Footer() {
         alignItems: 'center',
         gap: '0.5rem',
         paddingBottom: '2rem',
+        minHeight: '5rem',
       }}
     >
       <AnimatePresence>

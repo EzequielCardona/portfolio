@@ -40,9 +40,12 @@ export function ProjectBlock({ info, index }: IProps) {
   return (
     <Box
       ref={blockRef}
-      sx={{
+      sx={(theme) => ({
         minHeight: '25rem',
-      }}
+        [theme.breakpoints.down('sm')]: {
+          minHeight: '40rem',
+        },
+      })}
     >
       <AnimatePresence>
         {blockInView && (

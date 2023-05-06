@@ -43,7 +43,7 @@ export function MobileNavBar({ isDisplaying, handleCloseThis }: IProps) {
         >
           <Box
             sx={(theme) => ({
-              height: '100vh',
+              height: '100svh',
               backgroundColor: theme.palette.primary.darker,
               padding: '1rem',
               display: 'flex',

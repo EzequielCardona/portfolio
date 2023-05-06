@@ -28,9 +28,11 @@ export function AboutMeScreen() {
           width: '60%',
           [theme.breakpoints.down('md')]: {
             width: '70%',
+            minHeight: '50rem',
           },
           [theme.breakpoints.down('sm')]: {
             width: '90%',
+            minHeight: '70rem',
           },
         })}
       >
