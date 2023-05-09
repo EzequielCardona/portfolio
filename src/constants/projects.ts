@@ -53,7 +53,7 @@ export const projects: IProject[] = [
         'Pruebas de integración y unitarias con React Testing Library para el frontend y Nest Spec para el backend.',
       ],
       en: [
-        'Delevoping under totally agile environment with iterations present everywhere and Scrum ceremonies.',
+        'Developing under a totally agile environment with iterations present everywhere and Scrum ceremonies.',
         'Applying GIT best practices for manipulating and sharing code in a big team at production level. For example: code reviews and branching, code versioning',
         'Building responsive screens and navigation controls with React.Js out of proposed design and user flow with Figma.',
         'Building endpoints and services in a Nest.Js API. Running migrations with Sequelize to store and consume a PostgreSQL DB.',
@@ -117,7 +117,7 @@ export const projects: IProject[] = [
     productDescription: {
       fr: "Une application web servant de portfolio d'éditeur, avec un panneau d'administration pour gérer les données affichées.",
       es: 'Una aplicación web que sirve como portafolio de editor, con un panel de administración para gestionar los datos mostrados.',
-      en: 'A web app serving as an Editor Portolio, with an admin panel for managing the data displayed.',
+      en: 'A web app serving as an Editor Portfolio, with an admin panel for managing the data displayed.',
     },
     performance: {
       fr: [
