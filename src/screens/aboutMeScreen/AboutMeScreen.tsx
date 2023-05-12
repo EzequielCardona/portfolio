@@ -36,7 +36,7 @@ export function AboutMeScreen() {
           },
           [theme.breakpoints.down('sm')]: {
             width: '90%',
-            minHeight: '70rem',
+            minHeight: '75rem',
           },
         })}
       >
