@@ -53,3 +53,7 @@ ul {
 a {
   text-decoration-color: rgba(176, 90, 122, 1); /* primary.darker */
 }
+
+p {
+  margin: 0;
+}

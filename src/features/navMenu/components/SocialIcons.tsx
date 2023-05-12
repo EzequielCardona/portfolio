@@ -17,7 +17,7 @@ export function SocialIcons() {
         gap: '.5rem',
         padding: '1rem 0',
         [theme.breakpoints.down('lg')]: {
-          marginLeft: '1.65rem',
+          marginLeft: '1.2rem',
         },
         [theme.breakpoints.down('md')]: {
           display: 'none',

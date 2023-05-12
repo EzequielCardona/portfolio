@@ -93,7 +93,7 @@ export function LandingScreen() {
               sx={(theme) => ({
                 width: '80%',
                 color: theme.palette.text.secondary,
-                lineHeight: '1.57rem',
+                lineHeight: '1.5rem',
                 [theme.breakpoints.down('lg')]: {
                   width: '100%',
                 },

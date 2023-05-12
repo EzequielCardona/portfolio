@@ -3,10 +3,10 @@ import { langCheck } from '../../../utils';
 
 export function paragraph1Text(language: languageTypes) {
   if (langCheck.isFrench(language)) {
-    return "En tant que développeur de logiciels passionné et créatif, j'ai affiné mes compétences et mon expertise grâce à diverses expériences. En commençant ma carrière en tant que développeur web indépendant, j'ai acquis de précieuses compétences en communication professionnelle et j'ai appris l'importance de prendre en charge mon travail.";
+    return "Je suis un **développeur de logiciels JavaScript Middle** passionné et créatif. En commençant en tant que **freelance**, j'ai acquis de précieuses compétences en communication professionnelle et compris l'importance de prendre **responsabilité** de mon travail.";
   }
   if (langCheck.isSpanish(language)) {
-    return 'Como desarrollador de software apasionado y creativo, he perfeccionado mis habilidades y conocimientos a través de una variedad de experiencias.';
+    return 'Soy un apasionado y creativo **Desarrollador de Software Middle en JavaScript**. Comenzando como **freelance**, adquirí valiosas habilidades de comunicación profesional y aprendí la importancia de asumir la **responsabilidad** de mi trabajo.';
   }
-  return 'As a passionate and creative software developer, I have honed my skills and expertise through a variety of experiences. Beginning my career as a freelance web developer, I gained valuable professional communication skills and learned the importance of taking ownership of my work.';
+  return "I'm a passionate and creative **JavaScript Middle Software Developer**. Beginning as a **freelance**, I gained valuable professional communication skills and learned the importance of taking **ownership** of my work.";
 }

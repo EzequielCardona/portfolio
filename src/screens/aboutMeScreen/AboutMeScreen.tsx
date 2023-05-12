@@ -1,18 +1,20 @@
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { useRef } from 'react';
-import { Typography, Box, List, ListItem } from '@mui/material';
+import { Typography, Box } from '@mui/material';
 import { motion, useInView } from 'framer-motion';
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { FadeInTopWrapper, ScreenWrapper } from '../../common';
 import {
   titleText,
   paragraph1Text,
   paragraph2Text,
   paragraph3Text,
+  paragraph4Text,
 } from './texts';
 import ezequielPhoto from '../../assets/ezequiel-photo.png';
-import { mainSkills } from '../../constants';
 import { useAppSelector } from '../../redux/hooks';
 import { languageSelectors } from '../../redux/language';
+// import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+// import { mainSkills } from '../../constants';
 
 export function AboutMeScreen() {
   const language = useAppSelector(languageSelectors.language);
@@ -26,8 +28,10 @@ export function AboutMeScreen() {
         ref={screenRef}
         sx={(theme) => ({
           width: '60%',
+          [theme.breakpoints.down('lg')]: {
+            width: '80%',
+          },
           [theme.breakpoints.down('md')]: {
-            width: '70%',
             minHeight: '50rem',
           },
           [theme.breakpoints.down('sm')]: {
@@ -95,26 +99,45 @@ export function AboutMeScreen() {
               <div>
                 {/* Paragraphs */}
                 <FadeInTopWrapper delay={0.8}>
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      gap: '1rem',
-                    }}
-                  >
-                    <Typography variant="body1" color="text.secondary">
-                      {paragraph1Text(language)}
-                    </Typography>
-                    <Typography variant="body1" color="text.secondary">
-                      {paragraph2Text(language)}
-                    </Typography>
-                    <Typography variant="body1" color="text.secondary">
-                      {paragraph3Text(language)}
-                    </Typography>
-                  </Box>
+                  <>
+                    {/* Full paragraphs for desktop view */}
+                    <Box
+                      sx={(theme) => ({
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '1rem',
+                        color: theme.palette.text.secondary,
+                        lineHeight: '1.5rem',
+                        [theme.breakpoints.between('md', 'xl')]: {
+                          display: 'none',
+                        },
+                      })}
+                    >
+                      <ReactMarkdown>{paragraph1Text(language)}</ReactMarkdown>
+                      <ReactMarkdown>{paragraph2Text(language)}</ReactMarkdown>
+                      <ReactMarkdown>{paragraph3Text(language)}</ReactMarkdown>
+                      <ReactMarkdown>{paragraph4Text(language)}</ReactMarkdown>
+                    </Box>
+                    {/* Only two first paragraphs for small desktops and ipads */}
+                    <Box
+                      sx={(theme) => ({
+                        display: 'none',
+                        flexDirection: 'column',
+                        gap: '1rem',
+                        color: theme.palette.text.secondary,
+                        lineHeight: '1.5rem',
+                        [theme.breakpoints.between('md', 'xl')]: {
+                          display: 'flex',
+                        },
+                      })}
+                    >
+                      <ReactMarkdown>{paragraph1Text(language)}</ReactMarkdown>
+                      <ReactMarkdown>{paragraph2Text(language)}</ReactMarkdown>
+                    </Box>
+                  </>
                 </FadeInTopWrapper>
                 {/* Lists of skills */}
-                <FadeInTopWrapper delay={1.3}>
+                {/* <FadeInTopWrapper delay={1.3}>
                   <Box
                     sx={(theme) => ({
                       display: 'flex',
@@ -180,7 +203,7 @@ export function AboutMeScreen() {
                       })}
                     </List>
                   </Box>
-                </FadeInTopWrapper>
+                </FadeInTopWrapper> */}
               </div>
               <FadeInTopWrapper delay={0.8}>
                 <Box
@@ -198,6 +221,10 @@ export function AboutMeScreen() {
                       overflow: 'clip',
                       borderRadius: '50%',
                       boxShadow: theme.palette.primary.generalBoxShadow,
+                      [theme.breakpoints.down('xl')]: {
+                        width: '18rem',
+                        height: '20rem',
+                      },
                       [theme.breakpoints.down('lg')]: {
                         width: '17rem',
                         height: '19rem',
@@ -216,6 +243,35 @@ export function AboutMeScreen() {
                     />
                   </Box>
                 </Box>
+              </FadeInTopWrapper>
+            </Box>
+            <Box
+              sx={(theme) => ({
+                [theme.breakpoints.up('md')]: { display: 'flex' },
+                [theme.breakpoints.up('xl')]: { display: 'none' },
+              })}
+            >
+              <FadeInTopWrapper delay={0.5}>
+                <>
+                  {/* Only two last paragraphs for small desktops and ipads */}
+                  <Box
+                    sx={(theme) => ({
+                      display: 'none',
+                      flexDirection: 'column',
+                      gap: '1rem',
+                      color: theme.palette.text.secondary,
+                      lineHeight: '1.5rem',
+                      pt: '1rem',
+                      [theme.breakpoints.between('md', 'xl')]: {
+                        display: 'flex',
+                        flexDirection: 'column',
+                      },
+                    })}
+                  >
+                    <ReactMarkdown>{paragraph3Text(language)}</ReactMarkdown>
+                    <ReactMarkdown>{paragraph4Text(language)}</ReactMarkdown>
+                  </Box>
+                </>
               </FadeInTopWrapper>
             </Box>
           </>
