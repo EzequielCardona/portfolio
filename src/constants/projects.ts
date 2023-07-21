@@ -6,6 +6,7 @@ import spainFlag from '../assets/spain-flag.png';
 import colombiaFlag from '../assets/colombia-flag.png';
 import venezuelaFlag from '../assets/venezuela-flag.png';
 import ecuadorFlag from '../assets/ecuador-flag.png';
+import pitchdbScreenshot from '../assets/pitchdb-screenshot.png';
 import aeLaunchpodScreenshot from '../assets/ae-launchpod-screenshot.png';
 import aeDspScreenshot from '../assets/ae-dsp-screenshot.png';
 import ferranWebappScreenshot from '../assets/ferran-webapp-screenshot.png';
@@ -13,6 +14,33 @@ import vcpWebappScreenshot from '../assets/vcp-webapp-screenshot.png';
 import latinAdventuresWebAppScreenshot from '../assets/latinAdventures-webapp-screenshot.png';
 
 export const projects: IProject[] = [
+  {
+    id: '00',
+    title: 'PitchDB Tools',
+    url: 'https://app.pitchdb.com/',
+    type: projectTypes.contribution,
+    image: pitchdbScreenshot,
+    company: 'PitchDB',
+    countryFlags: [usaFlag, colombiaFlag],
+    mainSkills: [
+      'React.js',
+      'Material UI',
+      'Jest',
+      'Express.js',
+      'MongoDB && Mongoose',
+      'Git CI/CD pipelines',
+    ],
+    productDescription: {
+      fr: "Une série d'applications utilisant la structure MERN, qui sert de consultant en données/CRM pour la diffusion de la production de contenu social.",
+      es: 'Una serie de aplicaciones utilizando la estructura MERN, que sirve como consultor de datos/CRM para el alcance de producción de contenido social.',
+      en: 'A series of applications using the MERN structure, which servers as data consultant/CRM for social content production outreach.',
+    },
+    performance: {
+      fr: [''],
+      es: [''],
+      en: [''],
+    },
+  },  
   {
     id: '01',
     title: 'AE LaunchPod',

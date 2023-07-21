@@ -3,6 +3,29 @@ import { IExperience } from '../types';
 
 export const experiences: IExperience[] = [
   {
+    company: 'PitchDB',
+    companyUrl: 'https://pitchdb.com',
+    role: 'Full Stack Engineer',
+    dates: '6/2023',
+    description: {
+      fr: [
+        "Travaillé en tant qu'ingénieur JavaScript pour assurer la maintenance et la gestion de version d'une application MERN.",
+        "Mis en place la stratégie de déploiement avec des pipelines CI/CD en utilisant gitlab et des serveurs cloud pour différentes instances d'applications.",
+        "Proposé et mis en œuvre des modifications de conception pour améliorer l'interface utilisateur et l'expérience utilisateur (UI/UX).",
+      ],
+      es: [
+        'Trabajé como ingeniero de JavaScript para el mantenimiento y versionado de una aplicación MERN.',
+        'Llevé a cabo la estrategia de implementación con tuberías CI/CD utilizando gitlab y servidores en la nube para diferentes instancias de la aplicación.',
+        'Propuse e implementé cambios de diseño para mejoras en la interfaz de usuario y experiencia de usuario (UI/UX).',
+      ],
+      en: [
+        'Worked as a JavaScript engineer for maintaining and versioning a MERN application.',
+        'Carried the deployment strategy with CI/CD pipelines using gitlab and cloud servers for different app instances.',
+        'Proposed and implemented design changes for UI/UX improvements.',
+      ],
+    },
+  },  
+  {
     company: 'AgileEngine',
     companyUrl: 'https://agileengine.com',
     role: 'React Engineer',

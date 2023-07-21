@@ -200,9 +200,16 @@ export function ProjectBlock({ info, index }: IProps) {
                   },
                 })}
               >
-                <Typography variant="caption" color="primary.darker">
-                  {projectTypeText(language, info.type)}
-                </Typography>
+                <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                  <Typography variant="caption" color="primary.darker" sx={{ marginRight: '0.5rem' }}>
+                    {projectTypeText(language, info.type)}
+                  </Typography>
+                  {info.countryFlags.map((flag, index) => {
+                    return (
+                      <img key={index} src={flag} alt="country flag" width="30rem" />
+                    );
+                  })}
+                </Box>
                 <Typography variant="h4" color="text.primary" mb="1rem">
                   {info.title}
                 </Typography>
