@@ -3,10 +3,10 @@ import { langCheck } from '../../../utils';
 
 export function paragraph1Text(language: languageTypes) {
   if (langCheck.isFrench(language)) {
-    return "Je suis un **développeur de logiciels JavaScript Middle** passionné et créatif. En commençant en tant que **freelance**, j'ai acquis de précieuses compétences en communication professionnelle et compris l'importance de prendre **responsabilité** de mon travail.";
+    return "Lead Full-Stack Developer avec plus de 5 ans d’expérience dans le développement d’applications web, de plateformes SaaS, de systèmes CRM et de produits numériques orientés utilisateur.";
   }
   if (langCheck.isSpanish(language)) {
-    return 'Soy un apasionado y creativo **Desarrollador de Software Middle en JavaScript**. Comenzando como **freelance**, adquirí valiosas habilidades de comunicación profesional y aprendí la importancia de asumir la **responsabilidad** de mi trabajo.';
+    return 'Soy un Líder Técnico y Desarrollador Full Stack con más de 5 años de experiencia diseñando y desarrollando aplicaciones web, plataformas SaaS, sistemas CRM y productos digitales utilizados por clientes en distintos mercados.';
   }
-  return "I'm a passionate and creative **JavaScript Middle Software Developer**. Beginning as a **freelance**, I gained valuable professional communication skills and learned the importance of taking **ownership** of my work.";
+  return "I'm a Lead Full-Stack Developer with more than 5 years of experience building web applications, SaaS platforms, CRM systems, and customer-facing products.";
 }

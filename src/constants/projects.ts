@@ -7,6 +7,7 @@ import colombiaFlag from '../assets/colombia-flag.png';
 import venezuelaFlag from '../assets/venezuela-flag.png';
 import ecuadorFlag from '../assets/ecuador-flag.png';
 import pitchdbScreenshot from '../assets/pitchdb-screenshot.png';
+import speakerhubScreenshot from '../assets/speakerhub-screenshot.png';
 import aeLaunchpodScreenshot from '../assets/ae-launchpod-screenshot.png';
 import aeDspScreenshot from '../assets/ae-dsp-screenshot.png';
 import ferranWebappScreenshot from '../assets/ferran-webapp-screenshot.png';
@@ -14,10 +15,38 @@ import vcpWebappScreenshot from '../assets/vcp-webapp-screenshot.png';
 import latinAdventuresWebAppScreenshot from '../assets/latinAdventures-webapp-screenshot.png';
 
 export const projects: IProject[] = [
+    {
+    id: '06',
+    title: 'SpeakerHUB',
+    url: 'https://speakerhub.com/',
+    type: projectTypes.contribution,
+    image: speakerhubScreenshot,
+    company: 'SpeakerHUB',
+    countryFlags: [usaFlag, colombiaFlag],
+    mainSkills: [
+      'Tech Leadership',
+      'Project Management',
+      'DevOps',
+      'Next.js',
+      'TypeScript',
+      'Stripe.js',
+      'MERN Stack',
+    ],
+    productDescription: {
+      fr: "Une plateforme d'annuaire et de gestion du démarchage de niveau entreprise, comprenant un CRM intégré, la génération de propositions propulsée par IA et des systèmes de suivi des opportunités, conçue pour accroître les réservations de conférenciers et les ventes de produits numériques.",
+      es: 'Una plataforma de gestión de alcance y directorio de nivel empresarial que cuenta con un CRM integrado, generación de propuestas impulsada por IA y sistemas de seguimiento de clientes potenciales, diseñada para escalar las contrataciones de conferencistas y las ventas de productos digitales.',
+      en: 'An enterprise-grade directory and outreach management platform featuring a built-in CRM, AI-powered pitch generation, and lead-tracking systems designed to scale speaker bookings and digital product sales.',
+    },
+    performance: {
+      fr: [''],
+      es: [''],
+      en: [''],
+    },
+  },  
   {
-    id: '00',
-    title: 'PitchDB Tools',
-    url: 'https://app.pitchdb.com/',
+    id: '05',
+    title: 'PitchDB',
+    url: 'https://pitchdb.com/',
     type: projectTypes.contribution,
     image: pitchdbScreenshot,
     company: 'PitchDB',
@@ -42,7 +71,7 @@ export const projects: IProject[] = [
     },
   },  
   {
-    id: '01',
+    id: '04',
     title: 'AE LaunchPod',
     url: 'https://launchpod.agileengine.com/',
     type: projectTypes.contribution,
@@ -91,7 +120,7 @@ export const projects: IProject[] = [
     },
   },
   {
-    id: '02',
+    id: '03',
     title: 'AE Developer Submission Profile',
     url: emptyUrlReasons.restricted,
     type: projectTypes.contribution,
@@ -134,7 +163,7 @@ export const projects: IProject[] = [
     },
   },
   {
-    id: '03',
+    id: '02',
     title: "Editor's Portfolio",
     url: 'https://ferranelotro.info/website/',
     type: projectTypes.creation,
@@ -166,7 +195,7 @@ export const projects: IProject[] = [
     },
   },
   {
-    id: '04',
+    id: '01',
     title: 'Currency Exchanger Website',
     url: 'https://venecambiospana.com/',
     type: projectTypes.creation,
@@ -204,7 +233,7 @@ export const projects: IProject[] = [
     },
   },
   {
-    id: '05',
+    id: '00',
     title: 'Travel Agency Website',
     url: 'https://latinadventures.com.ec/',
     type: projectTypes.creation,

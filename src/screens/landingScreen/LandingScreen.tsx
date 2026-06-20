@@ -3,11 +3,9 @@ import {
   checkProjectsText,
   helloText,
   introText,
-  iLoveCodingText,
+  mainText,
 } from './texts';
 import { ScreenWrapper } from '../../common';
-import { motion } from 'framer-motion';
-import FavoriteIcon from '@mui/icons-material/Favorite';
 import ReactMarkdown from 'react-markdown';
 import { FadeInTopWrapper } from '../../common';
 import { useAppSelector } from '../../redux/hooks';
@@ -47,15 +45,13 @@ export function LandingScreen() {
           <Typography
             variant="h1"
             color="text.primary"
-            sx={(theme) => ({
-              [theme.breakpoints.down('sm')]: { fontSize: '2rem' },
-            })}
+            sx={{fontSize: '1.5rem' }}
           >
-            Ezequiel Cardona
+            {mainText(language)}
           </Typography>
         </FadeInTopWrapper>
 
-        <FadeInTopWrapper delay={1.9}>
+        {/* <FadeInTopWrapper delay={1.9}>
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <Typography
               variant="h1"
@@ -86,7 +82,7 @@ export function LandingScreen() {
               />
             </motion.div>
           </div>
-        </FadeInTopWrapper>
+        </FadeInTopWrapper> */}
         <FadeInTopWrapper delay={2.1}>
           <div style={{ margin: '2rem 0' }}>
             <Box

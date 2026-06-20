@@ -3,10 +3,10 @@ import { langCheck } from '../../../utils';
 
 export function paragraph3Text(language: languageTypes) {
   if (langCheck.isFrench(language)) {
-    return "Actuellement, je me spécialise dans Docker-compose pour orchestrer des **architectures de microservices**. Parallèlement, j'ai commencé à travailler dans le domaine du **DevOps**, en tirant parti des services cloud tels que AWS, Netlify et Heroku.";
+    return "Aujourd’hui, je dirige des initiatives de développement chez SpeakerHub, où je collabore étroitement avec les parties prenantes, j’encadre des ingénieurs, je participe aux processus de recrutement et aux évaluations de performance, et je contribue aux décisions produit et architecturales. J’aime créer des environnements où le logiciel et les personnes peuvent évoluer et se développer.";
   }
   if (langCheck.isSpanish(language)) {
-    return 'Actualmente, me estoy especializando en Docker-compose para orquestar **arquitecturas de microservicios**. Al mismo tiempo, he comenzado a trabajar en **DevOps**, aprovechando servicios en la nube como AWS, Netlify y Heroku.';
+    return 'Hoy lidero iniciativas de desarrollo en SpeakerHub, donde colaboro estrechamente con las partes interesadas, mentorizo a ingenieros, participo en procesos de contratación y evaluaciones de desempeño, y contribuyo a las decisiones de producto y arquitectura. Disfruto crear entornos donde tanto el software como las personas pueden crecer.';
   }
-  return "As for now, I'm specializing in Docker-compose for orchestrating **micro-service architectures**. In parallel, I've started to work in **DevOps**, leveraging cloud services like AWS, Netlify, and Heroku.";
+  return "Today, I lead development initiatives at SpeakerHub, where I collaborate closely with stakeholders, mentor engineers, participate in hiring and performance reviews, and contribute to product and architectural decisions. I enjoy creating environments where both software and people can grow.";
 }

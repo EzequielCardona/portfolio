@@ -3,10 +3,33 @@ import { IExperience } from '../types';
 
 export const experiences: IExperience[] = [
   {
+    company: 'SpeakerHUB',
+    companyUrl: 'https://speakerhub.com',
+    role: 'Tech Lead',
+    dates: '6/2024',
+    description: {
+      fr: [
+        "J’ai occupé le poste de Tech Lead Node.js avec des responsabilités partielles en gestion de projet, en veillant à l’exécution de la vision stratégique et à l’orientation technique de l’entreprise.",
+        "J’ai piloté les initiatives DevOps pour l’orchestration des environnements de développement, des pipelines de validation QA, ainsi que d’une plateforme composée de plusieurs produits adaptés à différents segments de marché.",
+        "J’ai analysé les priorités métier et les besoins stratégiques afin de définir les feuilles de route, planifier les implémentations et orienter l’évolution technique des produits.",
+      ],
+      es: [
+        'Me desempeñé como Tech Lead de Node.js y Project Manager parcial, asegurando la ejecución de la visión estratégica y la dirección tecnológica de la compañía.',
+        'Lideré iniciativas de DevOps para la orquestación de entornos de desarrollo, pipelines de validación QA y una plataforma compuesta por múltiples productos adaptados a distintos nichos de mercado.',
+        'Evalué prioridades de negocio y requerimientos estratégicos para definir hojas de ruta, planificar implementaciones y orientar la evolución técnica de los productos.',
+      ],
+      en: [
+        'Worked as a Node.js Tech Lead and partial Project Manager maintaining the direction set for the company.',
+        'DevOps for orquestrating all different instances for development, a qa validation pipeline, and a product subdivided into multiple products for each market nitch.',
+        'Measured business priorities for planning implementations and direction',
+      ],
+    },
+  },
+  {
     company: 'PitchDB',
     companyUrl: 'https://pitchdb.com',
     role: 'Full Stack Engineer',
-    dates: '6/2023',
+    dates: '6/2023 - 6/2024',
     description: {
       fr: [
         "Travaillé en tant qu'ingénieur JavaScript pour assurer la maintenance et la gestion de version d'une application MERN.",
