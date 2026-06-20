@@ -34,6 +34,7 @@ export function LandingScreen() {
         <FadeInTopWrapper delay={1.5}>
           <Typography
             variant="body1"
+            component="h1"
             color="primary.darker"
             fontWeight="bold"
             gutterBottom
@@ -43,9 +44,8 @@ export function LandingScreen() {
         </FadeInTopWrapper>
         <FadeInTopWrapper delay={1.7}>
           <Typography
-            variant="h1"
             color="text.primary"
-            sx={{fontSize: '1.5rem' }}
+            sx={{ fontSize: '1.5rem!important' }}
           >
             {mainText(language)}
           </Typography>
